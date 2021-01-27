@@ -1,6 +1,6 @@
 # 1. Overview
 
-In this project, we build a text classifier to perform sentiment analysis for us. Sentiment analysis is the process to detect the negative or positive sentiment in text, and while any business entity that provide either a product or a service needs a gauge to observe customer behavior toward its pricing plans or customer support, sentiment analysis comes as an optimal solution to businesses to understand customer needs and detect how their products / services perform in the market. However, in a more digitalized world where customer are more openly to express their feedback, it is inefficient, even impossible to manually perform this analysis in such huge datasets. Sentiment analysis models can help us automate this process by predicting positive and negative review both in real time and over time.
+In this project, we build a text classifier to perform sentiment analysis for us. Sentiment analysis is the process to detect the negative or positive sentiment in text, and while any business entity that provide either a product or a service needs to gauge customer behavior toward its pricing plans or customer support, sentiment analysis comes as an optimal solution for businesses to understand customer needs and detect how their products / services perform in the market. However, in a more digitalized world where customer are more openly to express their feedback, it is inefficient, even impossible, to manually perform this analysis in such huge data sets. Sentiment analysis models can help us automate this process by predicting positive and negative review both in real time and over time.
 ***
 
 # 2. Data set:
@@ -25,7 +25,7 @@ Different variations has no significant impact on the rating, However, Oak finis
 
 # 4. Model Development
 
-Standard classifiers suffer serious incapabality to discriminate the underrepresented class in imbalanced data sets. Many solution have been proposed to overcome skewed class distribution, one approachs deals with data preprocessing by resampling the data set (e.g. Oversampling) which will be our focus in this project, a second aproach is cost-sensitive learnoing (e.g. confidence threshold adjustment). 
+Standard classifiers suffer serious incapabality to discriminate the underrepresented class in imbalanced data sets. Many solution have been proposed to overcome skewed class distribution, one approachs deals with data preprocessing by resampling the data set (e.g. Oversampling) which will be our focus in this project, a second aproach is cost-sensitive learning (e.g. confidence threshold adjustment). 
 
 First, we clean our data to replace all numbers and punctuation with empty strings, remove stop words and perform stemming using `NLTK`, we transform the text into numerical data and computing TF-IDF to measure the word importance in our text. then we train different models (Logistic Regression, SVM, Random Forest) the the imbalaned data set where we observe severe bias toward the majority class, particularly Logistic Regression model.
 
@@ -38,4 +38,4 @@ Although it is recommended to use a combination of oversampling and undersamplin
 Finally, We will compare the performance of our learners before and after resampling our data set based on `balanced accuracy` which  provides a better performance metric to deal with imbalanced data sets.
 
 ![](figures/comparison.JPG)
-We observe that linear SVM comes first at performance in the imbalanced data set, followed by Random Forest, while Logisitic Regression is the most affected by imbalance. However, when used with a more balanced data, it acheieves the best results among the other classifiers.  
+We observe that linear SVM comes first at performance in the imbalanced data set, followed by Random Forest, while Logisitic Regression is the most affected by imbalance. However, when used with a more balanced data, it achieves the best results among the other classifiers.  
