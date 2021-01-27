@@ -4,7 +4,7 @@ In this project, we build a text classifier to perform sentiment analysis for us
 ***
 
 # 2. Data set:
-we use data set of customer reviews on Amazon Alexa, [here](https://www.kaggle.com/sid321axn/amazon-alexa-reviews/kernels)
+we use data set of customer reviews on Amazon Alexa which can be accessed [here](https://www.kaggle.com/sid321axn/amazon-alexa-reviews/kernels)
 
 ***
 
